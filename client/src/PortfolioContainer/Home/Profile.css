@@ -1,0 +1,135 @@
+.profile-container {
+  background: url('../../assets/bg.jpg');
+  object-fit: cover;
+  min-height: 627px;
+}
+
+.profile-parent {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 30px;
+  justify-self: center;
+  padding: 20px 5px;
+  justify-self: center;
+}
+.profile-details {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px solid greenyellow; */
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 3px;
+  color: white;
+}
+.icons > a {
+  color: white;
+}
+.colz {
+  display: flex;
+  align-items: center;
+  margin: 6px;
+}
+.highlighted-text {
+  color: #ff5823;
+}
+.primary-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+.btn-primary {
+  background-color: transparent;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid white;
+  margin: 0px 9px;
+  font-weight: 500;
+  outline: none;
+  text-transform: capitalize;
+  padding: 6px 15px;
+}
+.btn-secondary {
+  background-color: #ff5823;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 6px 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin: 0px 9px;
+}
+.profile-options {
+  /* border: 2px solid yellow; */
+  margin: 12px 0px;
+}
+.btn-secondary:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease-out;
+}
+.btn-primary:hover {
+  border: 2px solid #ff5823;
+  color: #ff5823;
+  background-color: transparent;
+}
+.primary-text > h1 {
+  text-align: center;
+  color: white;
+}
+.profile-picture-background {
+  background: url('../../assets/profilePhoto.jpg');
+  border-radius: 50%;
+  height: 92%;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  width: 92%;
+}
+.profile-picture {
+  display: flex;
+  align-items: center;
+  height: 380px;
+  width: 380px;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0px 1px 0px 0px white;
+}
+.profile-picture-background:hover {
+  height: 99%;
+  width: 99%;
+  transition: 0.3s ease-in;
+}
+.profile__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive or Mobile View */
+
+@media screen and (max-width: 700px) {
+  .profile-parent {
+    display: grid;
+    grid-template-columns: auto;
+
+    padding: 20px 5px;
+  }
+  .primary-text > h1 {
+    font-size: 1.625rem;
+  }
+  .primary-text {
+    font-size: 1.025rem;
+  }
+  .profile-picture {
+    height: 350px;
+    width: 100%;
+  }
+}
